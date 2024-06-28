@@ -1,0 +1,46 @@
+.darkMode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 112px;
+    height: 24px;
+
+    .iconDarkMode {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .mode {
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            position: relative;
+            width: 48px;
+            height: 24px;
+            background-color: #fff;
+            border-radius: calc(48px / 4);
+
+            &:hover {
+                cursor: pointer;
+                opacity: 0.5;
+            }
+
+            .ball {
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                background-color: #5964E0;
+                border-radius: 50%;
+                border: 3px solid #fff;
+                transition: transform 150ms linear;
+            }
+        }
+    }
+}

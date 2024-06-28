@@ -1,0 +1,68 @@
+.contenedor {
+    width: 730px;
+    height: 140px;
+    margin: 0 auto;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    .logoJob {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 140px;
+        height: 140px;
+        overflow: hidden;
+
+        img {
+            transform: scale(2);
+        }
+    }
+
+    .brandText {
+        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        row-gap: 10px;
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: capitalize;
+            color: #19202d;
+        }
+
+        .page {
+            font-size: 16px;
+            font-weight: 400;
+            color: #6e8098;
+            text-transform: lowercase;
+        }
+    }
+
+    .companySite {
+        width: 147px;
+        height: 48px;
+        color: #5964e0;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: capitalize;
+        background-color: rgba(201, 201, 201, 0.2);
+        border-radius: 5px;
+        border: none;
+        margin-right: 43px;
+        cursor: pointer;
+
+        &:active {
+            transform: scale(1.02);
+        }
+        &:hover {
+            color: #5964e0;
+            background-color: rgba(89, 100, 224, 0.35);
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.contenedor {
+    width: 100%;
+    height: 160px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.children {
+    transform: translateY(-40px);
+}

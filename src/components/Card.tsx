@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "@styles/Card.module.scss";
-import scoot from "../../public/scoot.svg";
+import scoot from "@assets/logos/scoot.svg";
 import Image from "next/image";
 const Card = ({
   logo = './assets/logos/scoot.svg',
@@ -15,13 +15,12 @@ const Card = ({
   return (
     <div className={styles.contenedor}>
       <div className={styles.iconJob} style={{ backgroundColor: color }}>
-        <Image alt={company} src={require(`../..${logo}`)} width={50} height={50}/>
+        <Image alt={company} src={logo} fill objectFit="scale-down" />
       </div>
 
       <div className={styles.detailPosition}>
         <p>
           <span className={`textCapitalize ${styles.textKind}`}>{time}</span>{" "}
-          <span className={styles.textKind}>ago</span>
           <span className={styles.textKind}> -</span>{" "}
           <span className={`textCapitalize ${styles.textKind}`}>{kind}</span>
         </p>

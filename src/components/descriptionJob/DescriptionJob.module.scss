@@ -1,0 +1,141 @@
+.contenedor {
+    padding-top: 48px;
+    max-width: 730px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 6px;
+
+    .mainDescription {
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .descriptionJob {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 45px;
+
+            .descriptionJobTopText {
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: capitalize;
+                color: #6e8098;
+            }
+            .descriptionJobCenterText {
+                font-size: 28px;
+                font-weight: bold;
+                text-transform: capitalize;
+                color: #19202d;
+            }
+
+            .descriptionBottomCenterText {
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: capitalize;
+                color: #5964e0;
+            }
+        }
+
+        .applyNow {
+            background-color: #5964e0;
+            width: 140px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            border: none;
+            text-transform: capitalize;
+            margin-right: 43px;
+            cursor: pointer;
+            &:hover {
+                background-color: #939bf4;
+            }
+            &:active {
+                transform: scale(1.02);
+            }
+        }
+    }
+
+    .aboutJob {
+        height: auto;
+        min-height: 180px;
+        padding: 0 45px;
+        margin-top: 4rem;
+        .aboutTextJob {
+            font-size: 16px;
+            font-weight: 400;
+            color: #6e8098;
+            line-height: 26px;
+        }
+    }
+
+    .requirementsJob {
+        height: auto;
+        min-height: 180px;
+        padding: 0 45px;
+        display: flex;
+        flex-direction: column;
+
+        .requirementSection {
+            text-transform: capitalize;
+            font-weight: bold;
+            font-size: 20px;
+            color: #19202d;
+            margin-bottom: 28px;
+        }
+        .requirementTextJob {
+            font-weight: 400;
+            font-size: 16px;
+            color: #6e8098;
+            line-height: 26px;
+        }
+
+        /* ESTILO PARA OL - NO TOCAR */
+        .ol {
+            list-style-type: none; /* Elimina el marcador predeterminado (el punto) */
+            counter-reset: item; /* Reinicia el contador de la lista */
+
+            li {
+                counter-increment: item; /* Incrementa el contador de la lista */
+
+                &::before {
+                    content: counter(item); /* Usa el valor del contador como contenido */
+                    color: #5964e0; /* Cambia el color del número */
+                    font-size: 20px; /* Cambia el tamaño de fuente del número */
+                    font-weight: bold; /* Aplica negrita al número */
+                    margin-right: 25px; /* Añade un margen a la derecha del número si es necesario */
+                }
+            }
+        }
+        /* ------------ FIN ---------- */
+
+        .listRequirementsJob {
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            list-style-position: inside;
+            li {
+                font-weight: 400;
+                font-size: 16px;
+                color: #6e8098;
+                line-height: 26px;
+                padding-left: 20px;
+                margin-bottom: 10px;
+                &:last-child {
+                    margin-bottom: 48px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.contenedor {
+    background-color: #5964e0;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    cursor: pointer;
+    border: none;
+
+    &:active {
+        transform: scale(1.02);
+        color: aliceblue;
+    }
+    &:hover {
+        background-color: #939bf4;
+    }
+}
